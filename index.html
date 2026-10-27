@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LL team — Counter-Strike 2</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a href="#top" class="topbar__logo" aria-label="LL team">
+        <svg class="logo" viewBox="0 0 250 232" role="img" aria-label="LL team">
+          <path d="M0 0 L42 15 V118 H116 L104 156 H0 Z"/>
+          <path d="M132 0 L174 15 V118 H248 L236 156 H132 Z"/>
+          <text x="248" y="230" text-anchor="end" textLength="190" lengthAdjust="spacingAndGlyphs">TEAM</text>
+        </svg>
+      </a>
+      <nav class="topbar__nav">
+        <a href="#roster">Состав</a>
+        <a href="#achievements">Достижения</a>
+        <a href="#ranking">Рейтинг</a>
+        <a href="#about">О команде</a>
+        <a href="#partners">Партнёры</a>
+      </nav>
+      <span class="topbar__game"><i class="mark"></i>CS2</span>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero wrap" id="roster">
+      <div class="hero__head">
+        <div>
+          <h1 class="hero__title">LL team</h1>
+          <p class="hero__tag"><b>GOATS</b> — Greatest Of All Time</p>
+        </div>
+        <dl class="hero__meta">
+          <dt>Дисциплина</dt><dd>Counter-Strike 2</dd>
+          <dt>Регион</dt><dd>пгт Романовичи</dd>
+          <dt>Сезон</dt><dd>2026</dd>
+        </dl>
+      </div>
+      <div class="lineup" id="lineup"></div>
+    </section>
+
+    <section class="wrap">
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="section wrap" id="achievements">
+      <div class="section__head">
+        <h2>Достижения</h2>
+        <p class="section__note">Ключевые турниры эпохи CS2</p>
+      </div>
+
+      <div class="majors" id="majors"></div>
+
+      <div class="results">
+        <div class="results__head" aria-hidden="true">
+          <span>Дата</span>
+          <span>Турнир</span>
+          <span>Место</span>
+          <span>Призовые</span>
+          <span></span>
+        </div>
+        <div class="results__list" id="results"></div>
+      </div>
+      <p class="results__hint">Нажмите на турнир, чтобы прочитать историю</p>
+    </section>
+
+    <section class="section wrap" id="ranking">
+      <div class="section__head">
+        <h2>Рейтинг</h2>
+        <p class="section__note" id="ranking-note"></p>
+      </div>
+
+      <ol class="ranking" id="ranking-list"></ol>
+    </section>
+
+    <section class="section wrap" id="wins">
+      <div class="section__head">
+        <h2>Крупнейшие победы</h2>
+        <p class="section__note">Сухие карты в истории команды</p>
+      </div>
+
+      <div class="wins" id="big-wins"></div>
+    </section>
+
+    <section class="section wrap" id="about">
+      <div class="section__head">
+        <h2>О команде</h2>
+      </div>
+
+      <div class="about">
+        <div class="about__text">
+          <p class="about__lead">LL team — киберспортивная организация, основанная в 2024 году. Состав по Counter-Strike 2 — один из самых титулованных коллективов своего поколения.</p>
+          <p>С момента основания команда играет на высшем уровне. За это время — победы на мейджорах, финалы крупнейших международных турниров и стабильное место в мировом топе.</p>
+          <dl class="about__facts">
+            <dt>Основана</dt><dd>2024</dd>
+            <dt>Регион</dt><dd>пгт Романовичи</dd>
+            <dt>Дисциплина</dt><dd>Counter-Strike 2</dd>
+          </dl>
+        </div>
+
+        <div class="goats">
+          <p class="goats__label">GOATS</p>
+          <ol class="goats__list">
+            <li><b>G</b><span>reatest</span></li>
+            <li><b>O</b><span>f</span></li>
+            <li><b>A</b><span>ll</span></li>
+            <li><b>T</b><span>ime</span></li>
+            <li><b>S</b><span></span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="partners">
+      <div class="section__head">
+        <h2>Партнёры</h2>
+        <p class="section__note">Спасибо, что вы с нами</p>
+      </div>
+
+      <div class="partners">
+        <article class="partner partner--main">
+          <p class="partner__kind">Генеральный партнёр</p>
+          <div class="partner__logo">
+            <img src="img/sponsors/dsk.png" alt="ДСК">
+          </div>
+          <h3 class="partner__name">ДСК</h3>
+          <p class="partner__desc">ОАО «Гомельский домостроительный комбинат»</p>
+        </article>
+
+        <article class="partner">
+          <p class="partner__kind">Официальный энергетический напиток</p>
+          <div class="partner__logo partner__logo--word">
+            <span class="word word--redbull">Red Bull</span>
+          </div>
+          <p class="partner__desc">Red Bull</p>
+        </article>
+
+        <article class="partner">
+          <p class="partner__kind">Партнёр по игровой периферии</p>
+          <div class="partner__logo partner__logo--word">
+            <span class="word word--logitech">logitech</span>
+          </div>
+          <p class="partner__desc">Logitech G</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer wrap">
+    <span>© 2024–2026 LL team. Все права защищены.</span>
+    <span class="footer__fine">сайт-шутка, все победы выдуманы</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
